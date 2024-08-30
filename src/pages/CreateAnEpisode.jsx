@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Header from '../components/Header'
 import InputComponent from '../input'
-import FileInput from '../components/common/fileInput'
+import FileInput from '../components/common/FileInput'
 import Button from '../components/Button'
 import { useNavigate, useParams } from 'react-router-dom'
 import { useDispatch } from 'react-redux'
