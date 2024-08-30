@@ -18,9 +18,7 @@ const currentPath = location.pathname;
         <Link to="/profile" className={currentPath=="/profile" ? "active" : ""} >Profile</Link>
       </div>
     </div>
-    <div className='profileImg'>
-      <div>photoURL==null?photoURL:<img src="photoURL" alt="img" /></div>
-    </div>
+    
     </>
   )
 }

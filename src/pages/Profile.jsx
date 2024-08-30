@@ -8,20 +8,20 @@ import { toast } from 'react-toastify';
 
 
 function Profile() {
-  const auth = getAuth();
+const auth = getAuth();
 const user1 = auth.currentUser;
-if (user1 !== null) {
-  // The user object has basic properties such as display name, email, etc.
-  var photoURL = user1.photoURL;
+// if (user1 !== null) {
+//   // The user object has basic properties such as display name, email, etc.
+//   var photoURL = user1.photoURL;
 
-console.log("photo Url:- ",photoURL);
-  // The user's ID, unique to the Firebase project. Do NOT use
-  // this value to authenticate with your backend server, if
-  // you have one. Use User.getToken() instead.
-  const uid = user1.uid;
-console.log("user unique id:- ",uid);
+// console.log("photo Url:- ",photoURL);
+//   // The user's ID, unique to the Firebase project. Do NOT use
+//   // this value to authenticate with your backend server, if
+//   // you have one. Use User.getToken() instead.
+//   const uid = user1.uid;
+// console.log("user unique id:- ",uid);
 
-}
+// }
 
     const user = useSelector((state)=>state.user.user)
     console.log("User>>>>", user);
@@ -42,7 +42,7 @@ console.log("user unique id:- ",uid);
 
   return (
     <div>
-      <Header photoURL={photoURL==null ? user.name[0]:"photoURL"}/>
+      <Header/>
       <h1>{user.name}</h1>
       <h1>{user.email}</h1>
       <h1>{user.uid}</h1>
