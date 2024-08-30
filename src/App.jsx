@@ -1,5 +1,5 @@
 import {BrowserRouter as Router, Route, Routes } from "react-router-dom"
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, Suspense } from 'react'
 import './App.css'
 import SignUpPage from "./pages/SignUpPage"
 import Profile from "./pages/Profile"
@@ -16,6 +16,9 @@ import CreateAPodcastPage from "./pages/CreateAPodcastPage"
 import PodcastsPage from "./pages/PodcastsPage"
 import PodcastDetails from "./pages/PodcastDetails"
 import CreateAnEpisode from "./pages/CreateAnEpisode"
+
+
+// const CreateAPodcastPage = React.lazy(() => import('./pages/CreateAPodcastPage'));
 
 function App() {
   const dispatch = useDispatch();
@@ -54,7 +57,8 @@ function App() {
 
   return (
     <div className="App">
-      <ToastContainer/>
+       <Suspense fallback={<div>Loading...</div>}>
+       <ToastContainer/>
       <Router>
         <Routes>
           <Route path="/" element={<SignUpPage />} />
@@ -71,6 +75,7 @@ function App() {
           </Route>
         </Routes>
       </Router>
+    </Suspense>
     </div>
   )
 }

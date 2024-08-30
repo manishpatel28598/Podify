@@ -2,7 +2,7 @@
     background-color: var(--purple);
     color: var(--purple-grey);
     display: flex;
-    jsutify-content: start;
+    justify-content: start;
     border: 2px solid var(--purple-grey);
     border-radius: 0.25rem;
     padding: 0.5rem 1rem;
