@@ -1,0 +1,19 @@
+.custom-input1{
+    background-color: var(--purple);
+    color: var(--purple-grey);
+    display: flex;
+    jsutify-content: start;
+    border: 2px solid var(--purple-grey);
+    border-radius: 0.25rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    width: 100%;
+    margin: 0.5rem;
+}
+.label-input{
+    color: var(--white);
+}
+
+.Active{
+    border: 2px solid var(--white);
+}
