@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import Button from "../Button";
 import { toast } from "react-toastify";
 import InputComponent from "../../input";
-import FileInput from "../common/fileInput";
+import FileInput from "../common/FileInput";
 import { getDownloadURL, ref, uploadBytes } from "firebase/storage";
 import { auth, db, storage } from "../../firebase";
 import { addDoc, collection } from "firebase/firestore";
