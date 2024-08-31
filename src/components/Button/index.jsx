@@ -1,5 +1,5 @@
 import React from 'react'
-import './style.css'
+import './Style.css'
 import '../../index.css'
 function Button({text, onClick, disabled}) {
   return (
